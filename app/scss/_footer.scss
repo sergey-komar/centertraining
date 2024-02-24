@@ -1,0 +1,42 @@
+.footer {
+    padding-top: 5.5rem;
+    padding-bottom: 7.5rem;
+    background: rgb(108, 118, 116);
+}
+.footer-block__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.6rem;
+}
+.footer-block__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+.footer-block__menu li a{
+    color: #fff;
+}
+.footer-block__top-btn {
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: #fff;
+}
+.footer-block__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.footer-block__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-block__bottom-policy,
+.footer-block__bottom-text {
+    color: rgb(201, 201, 201);
+}
