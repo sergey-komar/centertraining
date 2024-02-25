@@ -35,7 +35,7 @@
     // background: url('../images/bg.png') no-repeat;
     // background-size: cover;
 }
-.test{
+.wrapper{
     background: url('../images/bg.png') no-repeat;
     background-size: cover;
 }
@@ -52,11 +52,10 @@
     font-size: 80px;
     font-weight: 700;
     line-height: 100px;
-    letter-spacing: 0%;
 }
 .heading-block__text {
     margin-bottom: 4.5rem;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 150%;
 }

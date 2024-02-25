@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
   <body>
-    <div class="test">
+    <div class="wrapper">
       <header class="header">
         <div class="container">
           <div class="header__inner">
@@ -18,13 +22,13 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li>
-                  <a href="#">Цель программы</a>
+                  <a href="#chell">Цель программы</a>
                 </li>
                 <li>
-                  <a href="#">Формат и модули</a>
+                  <a href="#format">Формат и модули</a>
                 </li>
                 <li>
-                  <a href="#">Формат и модули</a>
+                  <a href="#program">Авторы</a>
                 </li>
               </ul>
             </nav>
@@ -36,6 +40,9 @@
                 class="btn__img header__btn-img"
               />
             </button>
+            <div class="nav-icon">
+              <div class="nav-icon__middle"></div>
+            </div>
           </div>
         </div>
       </header>
@@ -43,7 +50,9 @@
       <section class="heading">
         <div class="container">
           <div class="heading-block">
-            <div class="heading-block__content">
+            <div
+              class="heading-block__content wow animate__backInLeft animate__fadeIn"
+            >
               <h1 class="heading-block__title">Мощное продвижение экспертов</h1>
               <p class="heading-block__text">
                 Для экспертов мягких ниш: коучей, психологов, нутрицологов,
@@ -81,7 +90,84 @@
     </div>
 
     <main class="main">
-      <section class="such">
+      <div class="target wow animate__animated animate__fadeInUp" id="chell">
+        <div class="container">
+          <h3 class="target__title title">
+            Цель программы помочь вам перейти из такой жизни:
+          </h3>
+          <div class="target-block">
+            <div class="target-block__left">
+              <img src="./images/line-1.png" alt="img" />
+            </div>
+
+            <div class="target-block__right">
+              <div class="target-block__one">
+                <div class="target-block__one-item">
+                  <div class="target-block__one-text">
+                    Нет постоянного потока клиентов, не кому продавать
+                  </div>
+                  <img
+                    class="target-block__one-img"
+                    src="./images/line-2.png"
+                    alt="img"
+                  />
+                </div>
+                <div class="target-block__one-item">
+                  <div class="target-block__one-text">
+                    Внутри сидит чувство нереализованности
+                  </div>
+                  <img
+                    class="target-block__one-img"
+                    src="./images/line-2.png"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div class="target-block__center">
+                <img
+                  class="target-block__center-img"
+                  src="./images/target-img.png"
+                  alt="img"
+                />
+              </div>
+              <div class="target-block__two">
+                <div class="target-block__two-item">
+                  <img
+                    src="./images/line-6.png"
+                    alt="img"
+                    class="target-block__two-img"
+                  />
+                  <div class="target-block__two-text">
+                    Нет уверенности в завтрашнем дне
+                  </div>
+                </div>
+                <div class="target-block__two-item">
+                  <div class="target-block__two-text">
+                    Внутри что-то мешает росту
+                  </div>
+                  <img
+                    src="./images/line-5.png"
+                    alt="img"
+                    class="target-block__two-img"
+                  />
+                </div>
+                <div class="target-block__two-item">
+                  <div class="target-block__two-text">
+                    Смотришь на богатых экспертов и хочешь также
+                  </div>
+                  <img
+                    src="./images/line-3.png"
+                    alt="img"
+                    class="target-block__two-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="such wow animate__animated animate__fadeInUp">
         <div class="container">
           <h3 class="such__title title">В такую:</h3>
           <div class="such-block">
@@ -148,7 +234,10 @@
         </div>
       </section>
 
-      <section class="program">
+      <section
+        class="program wow animate__animated animate__fadeInDown"
+        id="program"
+      >
         <div class="container">
           <h3 class="program__title title">Авторы программы</h3>
           <div class="program-block">
@@ -187,7 +276,7 @@
             </div>
           </div>
 
-          <div class="program-block">
+          <div class="program-block program-bloc--order">
             <div class="program-block__img">
               <img src="./images/woomen.png" alt="img" />
             </div>
@@ -214,7 +303,7 @@
         </div>
       </section>
 
-      <div class="play">
+      <div class="play wow animate__animated animate__fadeInDown">
         <div class="container">
           <div class="play__inner">
             <video class="play__video" poster="./images/видео.png">
@@ -234,7 +323,7 @@
         </div>
       </div>
 
-      <section class="well">
+      <section class="well wow animate__animated animate__fadeInUp">
         <div class="container">
           <h3 class="well__title title">Для кого этот курс</h3>
           <div class="well-block">
@@ -292,7 +381,7 @@
         </div>
       </section>
 
-      <section class="mentor">
+      <section class="mentor wow animate__animated animate__fadeInDown">
         <div class="container">
           <h3 class="mentor__title title">
             В чем уникальность этого наставничества?
@@ -372,7 +461,7 @@
         </div>
       </section>
 
-      <section class="education">
+      <section class="education wow animate__animated animate__fadeInUp">
         <div class="container">
           <div class="education-box">
             <h3 class="education__title title">Как проходит обучение</h3>
@@ -491,7 +580,10 @@
         </div>
       </section>
 
-      <section class="card">
+      <section
+        class="card wow animate__animated animate__fadeInDown"
+        id="format"
+      >
         <div class="container">
           <div class="card__inner">
             <div class="card__wrapper">
@@ -777,70 +869,86 @@
         <div class="slider-bottom">
           <div class="slider-bottom__inner" dir="rtl">
             <div class="slider-bottom__wrapper">
-              <div class="slider-bottom__item play__inner">
-                <video class="play__video" poster="./images/slider-1.png" >
+              <div class="slider-bottom__item">
+                <video
+                  class="slider-play__video"
+                  id="fonn"
+                  poster="./images/slider-1.png"
+                >
                   <source
-                    class="play__video--video"
+                    class="slider-play__video--video"
                     src="./images/video-tm.mp4"
                     type="video/mp4"
                   />
                 </video>
 
-                <div id="controls" class="hidden">
-                  <a href="#" class="heading-block--btn ">
+                <div>
+                  <div class="slider__btn">
                     <img src="./images/Плеер.png" alt="img" />
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="slider-bottom__wrapper">
-              <div class="slider-bottom__item play__inner">
-                <video class="play__video" poster="./images/slider-2.png">
+              <div class="slider-bottom__item">
+                <video
+                  class="slider-play__video"
+                  id="fonn"
+                  poster="./images/slider-2.png"
+                >
                   <source
-                    class="play__video--video"
+                    class="slider-play__video--video"
                     src="./images/video-tm.mp4"
                     type="video/mp4"
                   />
                 </video>
 
-                <div id="controls" class="hidden">
-                  <a href="#" class="heading-block--btn">
+                <div>
+                  <div class="slider__btn">
                     <img src="./images/Плеер.png" alt="img" />
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="slider-bottom__wrapper">
-              <div class="slider-bottom__item play__inner">
-                <video class="play__video1" poster="./images/slider-3.png">
+              <div class="slider-bottom__item">
+                <video
+                  class="slider-play__video"
+                  id="fonn"
+                  poster="./images/slider-3.png"
+                >
                   <source
-                    class="play__video--video"
+                    class="slider-play__video--video"
                     src="./images/video-tm.mp4"
                     type="video/mp4"
                   />
                 </video>
 
-                <div id="controls" class="hidden">
-                  <a href="#" class="heading-block--btn">
+                <div>
+                  <div class="slider__btn">
                     <img src="./images/Плеер.png" alt="img" />
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="slider-bottom__wrapper">
-              <div class="slider-bottom__item play__inner">
-                <video class="play__video" poster="./images/slider-4.png">
+              <div class="slider-bottom__item">
+                <video
+                  class="slider-play__video"
+                  id="fonn"
+                  poster="./images/slider-4.png"
+                >
                   <source
-                    class="play__video--video"
+                    class="slider-play__video--video"
                     src="./images/video-tm.mp4"
                     type="video/mp4"
                   />
                 </video>
 
-                <div id="controls" class="hidden">
-                  <a href="#" class="heading-block--btn ">
+                <div>
+                  <div class="slider__btn">
                     <img src="./images/Плеер.png" alt="img" />
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -848,7 +956,7 @@
         </div>
       </section>
 
-      <div class="small">
+      <div class="small wow animate__animated animate__fadeInUp">
         <div class="container">
           <div class="small-box">
             <div class="small-box__content">
@@ -968,7 +1076,7 @@
         </div>
       </div>
 
-      <section class="questions">
+      <section class="questions wow animate__animated animate__fadeInDown">
         <div class="container">
           <div class="questions-box">
             <h3 class="questions-box__title title">FAQ</h3>
@@ -1111,7 +1219,7 @@
                 class="consultation-block__form-input"
                 placeholder="Ваша почта"
               />
-              <button class="consultation-block__form-btn btn">
+              <button class="consultation-block__form-btn">
                 <div class="btn__name heading-block__name">
                   Получить расписание
                 </div>
@@ -1121,16 +1229,23 @@
                   class="btn__img heading-block__img"
                 />
               </button>
-              <p class="consultation-block__form-text">
-                Я подтверждаю согласие на обработку персональных данных в
-                соответствии с условиями Политики обработки персональных данных,
-                ознакомился и согласен с ее условиями
-              </p>
+              <label class="consultation-block__label">
+                <div class="consultation-block__check">
+                  <input type="checkbox" class="consultation-block__input" />
+                  <span class="consultation-block__form-checked"></span>
+                </div>
+                <p class="consultation-block__form-text">
+                  Я подтверждаю согласие на обработку персональных данных в
+                  соответствии с условиями Политики обработки персональных
+                  данных, ознакомился и согласен с ее условиями
+                </p>
+              </label>
             </form>
           </div>
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-block">
@@ -1140,13 +1255,13 @@
             </a>
             <ul class="footer-block__menu">
               <li>
-                <a href="#">Цель программы</a>
+                <a href="#chell">Цель программы</a>
               </li>
               <li>
-                <a href="#">Формат и модули</a>
+                <a href="#format">Формат и модули</a>
               </li>
               <li>
-                <a href="#">Формат и модули</a>
+                <a href="#program">Авторы</a>
               </li>
             </ul>
             <button class="footer-block__top-btn btn">
@@ -1181,6 +1296,22 @@
       </div>
     </footer>
 
+    <div class="modal">
+      <div class="modal__inner">
+        <div class="modal__inner-block">
+          <form class="modal-form">
+            <input type="text" class="modal-form__input" placeholder="Имя" />
+            <input type="tel" class="modal-form__input" placeholder="Телефон" />
+            <button class="modal-form__btn">Заказать</button>
+            <div class="modal__close">&times;</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    ></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

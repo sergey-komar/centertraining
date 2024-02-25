@@ -30,6 +30,8 @@ $(function () {
 });
 
 window.addEventListener("DOMContentLoaded", () => {
+  new WOW().init();
+
   // получаем все элементы
   const headingVideo = document.querySelector(".play__video");
   var videoEl = document.getElementsByTagName("video")[0],
@@ -91,5 +93,57 @@ window.addEventListener("DOMContentLoaded", () => {
     );
   }
 
- 
+  //MODAL
+  const modalBtn = document.querySelectorAll(".btn");
+  const modal = document.querySelector(".modal");
+  const modalCloseBtn = document.querySelector(".modal__close");
+
+  modalBtn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      modal.classList.add("show");
+      modal.classList.remove("hide");
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  modalCloseBtn.addEventListener("click", () => {
+    modal.classList.add("hide");
+    modal.classList.remove("show");
+    document.body.style.overflow = "";
+  });
+  modal.addEventListener("click", (e) => {
+    if (e.target == modal) {
+      modal.classList.add("hide");
+      modal.classList.remove("show");
+      document.body.style.overflow = "";
+      document.body.style.marginRight = `0px`;
+    }
+  });
+
+  //MENU
+  const menu = document.querySelector(".menu");
+  const mobile = document.querySelector(".nav-icon");
+
+  mobile.addEventListener("click", function () {
+    document.body.classList.add("overflow");
+    this.classList.toggle("nav-icon--active");
+    menu.classList.toggle("nav--active");
+  });
+
+  const navLinks = document.querySelectorAll(".menu__list a");
+
+  navLinks.forEach(function (item) {
+    item.addEventListener("click", function () {
+      document.body.classList.remove("overflow");
+      mobile.classList.remove("nav-icon--active"); // Убираем активный класс у иконки моб. навигации
+      menu.classList.remove("nav--active"); // Убираем активный класс у блока моб. навигации
+    });
+  });
+
+
+
+
+//video
+
+
 });
